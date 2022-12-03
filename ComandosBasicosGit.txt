@@ -1,0 +1,17 @@
+Lista de comandos tomados del curso de Git y GitHub de platzi 
+02/12/2022
+
+
+*********//Comandos básicos//**********
+
+cd   -> change directory (Cambiar de directorio)
+mkdir-> make directory (Crear carpetas)
+ls   -> list (Ver el listado de las carpetas dentro del directorio).
+clear-> Limpiar la consola o con ctrl + l 
+pwd  -> print workink directory (imprime el nombre del directorio actual).
+touch-> Crea archivos vacíos. 
+code -> Abre la consola del editor de texto.
+code nombreArchivo.txt -> Abre el archivo especificado. 
+cat  -> Ver la información del archivo especifico.
+history -> Ver el historia de comandos. 
+ 
