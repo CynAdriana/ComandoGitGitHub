@@ -4,14 +4,32 @@ Lista de comandos tomados del curso de Git y GitHub de platzi
 
 *********//Comandos básicos//**********
 
-cd   -> change directory (Cambiar de directorio)
-mkdir-> make directory (Crear carpetas)
+cd   -> change directory (Cambiar de directorio).
+mkdir-> make directory (Crear carpetas).
 ls   -> list (Ver el listado de las carpetas dentro del directorio).
-clear-> Limpiar la consola o con ctrl + l 
+clear-> Limpiar la consola o con ctrl + l.
 pwd  -> print workink directory (imprime el nombre del directorio actual).
 touch-> Crea archivos vacíos. 
 code -> Abre la consola del editor de texto.
 code nombreArchivo.txt -> Abre el archivo especificado. 
 cat  -> Ver la información del archivo especifico.
 history -> Ver el historia de comandos. 
- 
+rm   -> remove (Borra el archivo ).
+rm --help -> te muestra mas comandos. 
+
+*********//Comandos GIT//**********
+git init -> inicializa un repositorio en GIT (BD donde se guardara toda la info).
+git add nombreArchivo.txt -> Agrega los archivos especificos en el staging (repositorio).
+git add . -> Añade todos los archivos en el staging.
+git commit -m"mesaje"-> Buena practica agregar un mensaje cada que se hace un commit, envia los archios "finales" del staging al master
+git rm nombreArchivo.txt -> remueve los archivos. 
+git rm --cached nombreArchivo.txt -> Remueves el archivo (quitarle el add).
+(si le das rm --cahced tienes qeu volver a agregar el git add .)
+git commit -m"Buena practica agregar mensajes a tus cambios".
+
+*********//Comandos configurar GIT//**********
+git config -> Ver todas las confiuraciones de git
+git config --list 
+git config --list --show-origin -> Ver en dende estan las config guardadas. 
+git config --global user.name "Cyn Rod" ->Crear un usuario. 
+git config --global user.name "cyn_adri_rod_mtz@hotmil.com" añadir correo.
