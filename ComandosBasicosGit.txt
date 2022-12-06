@@ -26,7 +26,7 @@ git rm nombreArchivo.txt -> remueve los archivos.
 git rm --cached nombreArchivo.txt -> Remueves el archivo (quitarle el add).
 (si le das rm --cahced tienes qeu volver a agregar el git add .)
 git commit -m"Buena practica agregar mensajes a tus cambios".
-
+git diff ->Ver la diferencias entre stagging y el directorio actual.
 *********//Comandos configurar GIT//**********
 git config -> Ver todas las confiuraciones de git
 git config --list 
