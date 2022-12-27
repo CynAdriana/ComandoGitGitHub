@@ -4,14 +4,45 @@ Lista de comandos tomados del curso de Git y GitHub de platzi
 
 *********//Comandos básicos//**********
 
-cd   -> change directory (Cambiar de directorio)
-mkdir-> make directory (Crear carpetas)
+cd   -> change directory (Cambiar de directorio).
+mkdir-> make directory (Crear carpetas).
 ls   -> list (Ver el listado de las carpetas dentro del directorio).
-clear-> Limpiar la consola o con ctrl + l 
+clear-> Limpiar la consola o con ctrl + l.
 pwd  -> print workink directory (imprime el nombre del directorio actual).
 touch-> Crea archivos vacíos. 
 code -> Abre la consola del editor de texto.
 code nombreArchivo.txt -> Abre el archivo especificado. 
 cat  -> Ver la información del archivo especifico.
 history -> Ver el historia de comandos. 
- 
+rm   -> remove (Borra el archivo ).
+rm --help -> te muestra mas comandos. 
+
+*********//Comandos GIT//**********
+-git init -> inicializa un repositorio en GIT (BD donde se guardara toda la info).
+-git add nombreArchivo.txt -> Agrega los archivos especificos en el staging (repositorio).
+-git add . -> Añade todos los archivos en el staging.
+-git commit -m"mesaje"-> Buena practica agregar un mensaje cada que se hace un commit, envia los archios "finales" del staging al master
+-git rm nombreArchivo.txt -> remueve los archivos. 
+-git rm --cached nombreArchivo.txt -> Remueves el archivo (quitarle el add).
+(si le das rm --cached tienes qeu volver a agregar el git add .)
+-git rm --force: Elimina los archivos de Git y del disco duro.
+-git commit -m"Buena practica agregar mensajes a tus cambios".
+-git diff ->Ver la diferencias entre stagging y el directorio actual.
+-git log --stat ->Muestra los cambios especificos que se le realizo a cada archivo. 
+-git checkout ID nombreArchivo.txt-> Ver una archivo como estaba anteriormente 
+---Notas importantes---
+Cuando se ejecuta el comando checkout y especificando a que ID se quiere regresar
+se muestra temporalmente com estaba el archivo anteriormente y si se da GIT COMMIT -m
+se pierde todos los cambios qeu se tenian actualmente y asi regresando a su estatus anterios
+(se pierden todos loscambios realizados)
+y con: 
+-git checkout master nombrearchivo.txt-> se mantiene el archivo con sus ultimos cambios realizados.
+git reset --soft: Borramos todo el historial y los registros de Git pero guardamos los cambios que tengamos en Staging, así podemos aplicar las últimas actualizaciones a un nuevo commit.
+-git reset --hard: Borra todo.Toda la información de los commits y del área de staging se borra del historial.
+
+*********//Comandos configurar GIT//**********
+-git config -> Ver todas las confiuraciones de git
+-git config --list 
+git config --list --show-origin -> Ver en dende estan las config guardadas. 
+git config --global user.name "Cyn Rod" ->Crear un usuario. 
+git config --global user.name "cyn_adri_rod_mtz@hotmil.com" añadir correo.
