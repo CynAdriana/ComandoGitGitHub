@@ -52,7 +52,13 @@ al servidor remoto.
 -git fetch: Lo usamos para traer actualizaciones des servidor remotoy guardarlas en nuestro repositorio local.
 - git merge: Combina los ultimos cambios del servidor remoto y nuestro directorio de trabajo. 
 -git pull: Copia repositorio la BD en el repositorio(es lo mismo de que fetch y merge).
-
+---------------------------------------------------------------------------
+CREAR RAMAS
+---------------------------------------------------------------------------
+-Se crea en la rama en la que te encuentras
+-git show -> Puedo ver en que cabecera estoy
+-git branch nombreCabecera ->Crear una rama
+-git checkout nombreCabecera->cambiar de rama
 
 
 
