@@ -57,8 +57,14 @@ CREAR RAMAS
 ---------------------------------------------------------------------------
 -Se crea en la rama en la que te encuentras
 -git show -> Puedo ver en que cabecera estoy
--git branch nombreCabecera ->Crear una rama
+-git branch nombreCabecera ->Crear una rama(ver nombre de ramas)
 -git checkout nombreCabecera->cambiar de rama
+---------------
+Es necesario hacer el add y commit en cada rama o si no se perdera el cambios 
+en caso de cambiar de rama.
+
+Se debe hacer el marge en la rama "Master"
+---------------
 
 
 
