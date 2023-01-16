@@ -1,4 +1,4 @@
-Lista de comandos tomados del curso de Git y GitHub de platzi 
+LISTA DE COMANDOS TOMADOS DEL CURSO DE GIT Y GITHUB DE PLATZI 
 02/12/2022
 
 
@@ -8,38 +8,38 @@ cd   -> change directory (Cambiar de directorio).
 mkdir-> make directory (Crear carpetas).
 ls   -> list (Ver el listado de las carpetas dentro del directorio).
 clear-> Limpiar la consola o con ctrl + l.
-pwd  -> print workink directory (imprime el nombre del directorio actual).
+pwd  -> print working directory (imprime el nombre del directorio actual).
 touch-> Crea archivos vacíos. 
 code -> Abre la consola del editor de texto.
 code nombreArchivo.txt -> Abre el archivo especificado. 
 cat  -> Ver la información del archivo especifico.
-history -> Ver el historia de comandos. 
-rm   -> remove (Borra el archivo ).
-rm --help -> te muestra mas comandos. 
+history -> Ver el historial de comandos. 
+rm   -> remove (Borra el archivo).
+rm --help -> te muestra más comandos. 
 
 *********//Comandos GIT//**********
--git init -> inicializa un repositorio en GIT (BD donde se guardara toda la info).
--git add nombreArchivo.txt -> Agrega los archivos especificos en el staging (repositorio).
+-git init -> inicializa un repositorio en GIT (BD donde se guardará toda la info).
+-git add nombreArchivo.txt -> Agrega los archivos específicos en el staging (repositorio).
 -git add . -> Añade todos los archivos en el staging.
--git commit -m"mesaje"-> Buena practica agregar un mensaje cada que se hace un commit, envia los archios "finales" del staging al master
+-git commit -m"mesaje"-> Buena práctica agregar un mensaje cada que se hace un commit, envía los archivos "finales" del staging al master
 -git rm nombreArchivo.txt -> remueve los archivos. 
 -git rm --cached nombreArchivo.txt -> Remueves el archivo (quitarle el add).
-(si le das rm --cached tienes qeu volver a agregar el git add .)
+(si le das rm --cached tienes que volver a agregar el git add .)
 -git rm --force: Elimina los archivos de Git y del disco duro.
 -git commit -m"Buena practica agregar mensajes a tus cambios".
--git diff ->Ver la diferencias entre stagging y el directorio actual.
--git log --stat ->Muestra los cambios especificos que se le realizo a cada archivo. 
--git checkout ID nombreArchivo.txt-> Ver una archivo como estaba anteriormente 
+-git diff ->Ver la diferencia entre staging y el directorio actual.
+-git log --stat ->Muestra los cambios específicos que se le realizo a cada archivo. 
+-git checkout ID nombreArchivo.txt-> Ver un archivo como estaba anteriormente 
 ---Notas importantes---
 Cuando se ejecuta el comando checkout y especificando a que ID se quiere regresar
-se muestra temporalmente com estaba el archivo anteriormente y si se da GIT COMMIT -m
-se pierde todos los cambios qeu se tenian actualmente y asi regresando a su estatus anterios
-(se pierden todos loscambios realizados)
+se muestra temporalmente como estaba el archivo anteriormente y si se da GIT COMMIT -m
+se pierde todos los cambios que se tenían actualmente y así regresando a sus estatus anteriores
+(se pierden todos los cambios realizados)
 y con: 
--git checkout master nombrearchivo.txt-> se mantiene el archivo con sus ultimos cambios realizados.
+-git checkout master nombrearchivo.txt-> se mantiene el archivo con sus últimos cambios realizados.
 -git reset ID --soft: Borramos todo el historial y los registros de Git pero guardamos los cambios que tengamos en Staging, así podemos aplicar las últimas actualizaciones a un nuevo commit.
--git reset ID --hard: Borra todo.Toda la información de los commits y del área de staging se borra del historial.
--git commit -am"" ->Realiza el git add de los cambios(solo funciona una vez realizado el git add anteriormente<).
+-git reset ID --hard: Borra todo. Toda la información de los commits y del área de staging se borra del historial.
+-git commit -am"" ->Realiza el git add de los cambios (solo funciona una vez realizado el git add anteriormente).
 
 
 ---------------------------------------------------------------------------
@@ -47,21 +47,20 @@ COMANDOS PARA TRABAJO REMOTO
 ---------------------------------------------------------------------------
 -git clone url_del_servidor_remoto : Permite descargar los archivos de la última versión
 de la rama principal y todo el historial de cambios en la carpeta .git
--git push: Luego de hacer gi add y git commit debemos ejecutar este comando para mandar los cambios 
-al servidor remoto.
--git fetch: Lo usamos para traer actualizaciones des servidor remotoy guardarlas en nuestro repositorio local.
-- git merge: Combina los ultimos cambios del servidor remoto y nuestro directorio de trabajo. 
--git pull: Copia repositorio la BD en el repositorio(es lo mismo de que fetch y merge).
+-git push: Luego de hacer gi add y git commit debemos ejecutar este comando para mandar los cambios al servidor remoto.
+-git fetch: Lo usamos para traer actualizaciones des servidor remoto y guardarlas en nuestro repositorio local.
+- git merge: Combina los últimos cambios del servidor remoto y nuestro directorio de trabajo. 
+-git pull: Copia repositorio la BD en el repositorio (es lo mismo de que fetch y merge).
 ---------------------------------------------------------------------------
 CREAR RAMAS
 ---------------------------------------------------------------------------
--Se crea en la rama en la que te encuentras
--git show -> Puedo ver en que cabecera estoy
--git branch nombreCabecera ->Crear una rama(ver nombre de ramas)
--git checkout nombreCabecera->cambiar de rama
+-Se crea en la rama en master
+-git show -> Puedo ver en que cabecera estoy.
+-git branch nombreCabecera ->Crear una rama (ver nombre de ramas).
+-git checkout nombreCabecera->cambiar de rama.
 ---------------
-Es necesario hacer el add y commit en cada rama o si no se perdera el cambios 
-en caso de cambiar de rama.
+Es necesario hacer el add y commit en cada rama o si no se perderá el cambio 
+Antes de cambiar de rama.
 
 Se debe hacer el marge en la rama "Master"
 ---------------
@@ -75,8 +74,8 @@ Se debe hacer el marge en la rama "Master"
 *********//Comandos configurar GIT//**********
 -git config -> Ver todas las confiuraciones de git
 -git config --list 
-git config --list --show-origin -> Ver en dende estan las config guardadas. 
+git config --list --show-origin -> Ver en dende están las config guardadas. 
 git config --global user.name "Cyn Rod" ->Crear un usuario. 
 git config --global user.name "cyn_adri_rod_mtz@hotmil.com" añadir correo.
  
- 
+
