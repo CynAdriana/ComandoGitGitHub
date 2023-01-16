@@ -72,7 +72,7 @@ git remote ->vemos que exite origin.
 git remote -v (verbal)-> MUestra origin para hacer fetch(traer) y push(enviar).
 git origin push master ->Enviar el origen de la rama master.(enviar nuestros archivos a github)
 git pull origin master --allow-unrelated-histories->fusionar con lo que se tiene en la rama local.
-
+(Damos otra vez estos comandos para ver los commits en la consola de git)
 
 
 
