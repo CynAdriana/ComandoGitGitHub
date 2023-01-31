@@ -73,8 +73,22 @@ git remote -v (verbal)-> MUestra origin para hacer fetch(traer) y push(enviar).
 git origin push master ->Enviar el origen de la rama master.(enviar nuestros archivos a github)
 git pull origin master --allow-unrelated-histories->fusionar con lo que se tiene en la rama local.
 (Damos otra vez estos comandos para ver los commits en la consola de git)
+-------------------------Comandos conexion con GitHub
+***Crear llaves públicas y provadas en Git***
+ssh-keygen -t rsa -b 4096 -C"correoGitHub@gamil.com"->Key generation SSH algoritmo que se usa(-t rsa) complejidad y correo al que se va a conectar la llave.
+**Pide donde guardar la llave ?***enter y pide passphaser
+**Se crea la llave privada y puplca en la carpeta .ssh/..
+**Levar la llave publica a github
+**Agregar la llave al entorno
 
-
+**Revisar qeu las llaves esten corriendo cuando se conecte a github
+eval $(ssh-agent -s) ->encender el servidor de llaves SSH (agregar una llave a git bash)
+***da un núm*** 
+agent 386(procesador)(significa que corren las llaves)
+***Agregar la llave al servidor (revisar donde se agrego)
+ssh -add ~/.ssh/id_rsa(ruta donde guardaste tu llave privada)
+******* cd ~/CursoGit2023/******
+ls -al -> ver llasves
 
 
 *********//Comandos configurar GIT//**********
