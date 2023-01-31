@@ -88,7 +88,18 @@ agent 386(procesador)(significa que corren las llaves)
 ***Agregar la llave al servidor (revisar donde se agrego)
 ssh -add ~/.ssh/id_rsa(ruta donde guardaste tu llave privada)
 ******* cd ~/CursoGit2023/******
-ls -al -> ver llasves
+ls -al -> ver llaves
+********Subir un cambio a GitHub*******
+Antes de hacer un commit es traer la ultima versión del servidor
+git pull (yes)
+
+git pull origin master-> (traer del origen y la vamos a fusionar con la rama master) 
+(Buena practica)
+
+git -commit -am"msj"
+***Enviar el cambio***
+git pull origin master
+git push origin mastes ->Enviar los cambios 
 
 
 *********//Comandos configurar GIT//**********
