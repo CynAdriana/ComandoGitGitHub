@@ -101,6 +101,30 @@ git -commit -am"msj"
 git pull origin master
 git push origin mastes ->Enviar los cambios 
 
+************Comandos para agregar ALIAS & TAGS
+-git log-> historial
+-git log --all ->historial detallado
+-git log --all --graph->Muestra el brach de las ramas
+-git log --all --graph --decorate --oneline->Muestra el historial comprimido
+************Agregar un ALIAS
+-alias NombreAlias ="comando" 
+ejemplo 
+-alias arbolito  = "git log --all --graph --decorate --oneline"
+Y ejecutas solo con:
+-arbolito->te muestra la información del comando
+************Crear TAGS
+-git tag -a V.01 -m"Este es el primer tag" hash
+-git tag ->Muestra los tags
+-git show-ref --tags->Muestra la info mas detallada
+***Subir los tag
+Una buena practica es actualizar nuestro ambiente(ultima versión)
+-git pull origin master
+-git push origin master --tags -> Enviar los tags
+***Elimiar TAGS
+-git tag->Muestra los tags 
+-git tag -d NombreTag ->Eliminar el tag
+-git push origin :refs/tags/NombreTag ->Eliminar tag
+
 
 *********//Comandos configurar GIT//**********
 -git config -> Ver todas las confiuraciones de git
