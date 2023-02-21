@@ -132,5 +132,7 @@ Una buena practica es actualizar nuestro ambiente(ultima versión)
 git config --list --show-origin -> Ver en dende están las config guardadas. 
 git config --global user.name "Cyn Rod" ->Crear un usuario. 
 git config --global user.name "cyn_adri_rod_mtz@hotmil.com" añadir correo.
- 
+********************************************************
+git clone (pegar la url de git)
 
+													
